@@ -1,0 +1,11 @@
+file_format: "1"
+id: tbkmini
+name: TBKmini
+type: shield
+url: https://github.com/foostan/crkbd/
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - tbkmini_left
+  - tbkmini_right
