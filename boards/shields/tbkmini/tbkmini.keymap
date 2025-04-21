@@ -2,12 +2,28 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+
 / {
     chosen {
         zmk,physical-layout = &physical_layout0;
     };
 };
 
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        bootloader_left {
+            bindings = <&bootloader>;
+            key-positions = <37 36 0>;
+        };
+
+        bootloader_right {
+            bindings = <&bootloader>;
+            key-positions = <40 41 11>;
+        };
+    };
+    
 / {
     keymap {
         compatible = "zmk,keymap";
